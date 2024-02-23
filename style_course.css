@@ -1,0 +1,366 @@
+@import url("https://fonts.googleapis.com/css2?family=Agbalumo&family=Cormorant:wght@300&family=Lato:wght@300&family=Noto+Serif:wght@100;300;400&display=swap");
+@import url(./media.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "roboto", "Cormorant " sans-serif;
+}
+
+body {
+    background: #ffffff;
+}
+
+
+/* aboout me  */
+
+section {
+    max-width: 1270px;
+    margin: auto;
+    padding: 0 20px;
+}
+
+span {
+    font-family: "Cormorant", serif;
+    font-size: 28px;
+    display: flex;
+    width: 81.13px;
+    height: 39px;
+    letter-spacing: 1px;
+}
+
+.break {
+    height: 2px;
+    background-color: #000000;
+}
+
+/* -- */
+
+.intros {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    gap: 1rem;
+    transition: ease-in-out;
+}
+
+.intro {
+    padding: 1rem;
+    height: 4rem;
+    font-size: 18px;
+    font-family: "Lato", sans-serif;
+    line-height: 30px;
+    word-spacing: 5px;
+}
+
+.p1 {
+    font-size: 42px;
+    font-family: "Cormorant", serif;
+    font-weight: bold;
+    float: left;
+    line-height: 50px;
+    word-spacing: 5px;
+}
+
+/* about  and hr  */
+
+/* image */
+
+.myself {
+    width: auto;
+    height: auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 5rem;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    margin: 0 auto;
+    padding: 30px 0;
+}
+
+/* below the image */
+
+.text1 {
+    color: rgb(0, 0, 0);
+    padding: 1rem;
+    height: 4rem;
+    font-size: 18px;
+    font-family: "Lato", sans-serif;
+    line-height: 30px;
+    word-spacing: 5px;
+}
+
+.texts {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: grid;
+    gap: 1rem;
+    margin-bottom: 25%;
+}
+
+
+/* banner  */
+
+/* Banner Styles */
+.banner {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 80px;
+    text-align: center;
+    background-color: #008080;
+    color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    margin: 20px;
+}
+
+/* Quote Icon Styles */
+.banner-inner i {
+    font-size: 24px;
+    line-height: 1;
+    margin: 0 5px;
+}
+
+.banner-inner i {
+    opacity: 0.5;
+}
+
+
+/* newsletter  */
+.container {
+    max-width: 100%;
+    margin: 20px auto;
+    background-color: #ffffff;
+    border-radius: 8px;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 70px;
+}
+
+.content {
+    flex: 1;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333;
+    font-size: large;
+    margin-top: 3%;
+}
+
+form input {
+    width: 70%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.subs-button {
+    display: block;
+    width: 20%;
+    padding: 10px;
+    text-align: center;
+    background-color: #008080;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    margin-top: 10px;
+    font-size: 18px;
+}
+
+.social-icons {
+    margin-top: 30px;
+    text-align: left;
+}
+
+.social-icons i {
+    display: inline-block;
+    margin: 0 15px;
+    text-decoration: none;
+    color: #008080;
+    font-size: 28px;
+}
+
+.newsletter-image {
+    border-radius: 8px;
+    height: 30em;
+    width: 30em;
+
+}
+
+footer {
+    height: 1vh;
+    margin: 1rem;
+}
+
+footer p {
+    text-align: center;
+}
+
+
+
+/* media  */
+/* nav  */
+@media (max-width: 940px) {
+    .menu ul {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        max-width: 400px;
+        padding-top: 45px;
+        height: 100%;
+        background: #ecf0f3;
+        box-shadow: 0 5px 10px #b0b0b5;
+        z-index: 12;
+        transition: all 0.3s ease;
+    }
+
+    .menu ul a {
+        display: block;
+        font-size: 23px;
+        width: 100%;
+        margin-top: 30px;
+        box-shadow: none;
+        text-align: center;
+    }
+
+    .menu ul a:hover:before {
+        box-shadow: none;
+    }
+
+    nav label.bars {
+        display: block;
+    }
+
+    #check:checked~label.bars {
+        display: none;
+    }
+
+    #check:checked~ul label.cancel {
+        display: block;
+    }
+
+    #check:checked~ul {
+        left: 0;
+    }
+}
+
+/* about  */
+@media (max-width: 350) {
+    .span {
+        display: block;
+        position: fixed;
+        top: 0;
+        left: -100%;
+        width: 100%;
+        max-width: 400px;
+        padding-top: 45px;
+        height: 100%;
+    }
+}
+
+/* about me 2 grid  */
+
+@media (min-width: 900px) {
+    .intros {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 600px) {
+    .intros {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 590px) {
+    .intros {
+        grid-template-columns: repeat(1, 1fr);
+        min-height: auto;
+    }
+
+    .p1 {
+        font-size: 35px !important;
+        line-height: 2rem;
+        word-spacing: 3px;
+    }
+
+    .p2 {
+        margin-top: 8%;
+    }
+}
+
+@media (max-width: 490px) {
+    .intros {
+        grid-template-columns: repeat(1, 1fr);
+        min-height: 250px;
+    }
+
+    .p1 {
+        font-size: 28px !important;
+        line-height: 2rem;
+        word-spacing: 3px;
+    }
+
+    .p2 {
+        margin-top: 8%;
+    }
+}
+
+@media (max-width: 390px) {
+    .intros {
+        grid-template-columns: repeat(1, 1fr);
+        min-height: 200px;
+    }
+
+    .p1 {
+        font-size: 25px !important;
+        line-height: 2rem;
+    }
+
+    .p2 {
+        margin-top: 8%;
+    }
+}
+
+@media (max-width: 320px) {
+    .intros {
+        grid-template-columns: repeat(1, 1fr);
+        min-height: 150px;
+    }
+
+    .p1 {
+        font-size: 20px !important;
+        line-height: 2rem;
+    }
+
+    .p2 {
+        margin-top: 8%;
+    }
+}
+
+/* three grid after the img  */
+@media (min-width: 600px) {
+    .texts {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (min-width: 900px) {
+    .texts {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
